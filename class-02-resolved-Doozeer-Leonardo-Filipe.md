@@ -111,13 +111,12 @@ Fetched 6 record(s) in 11ms
 
 ## Pikachu (passo 6)
 ```
-Leonardos-MacBook-Pro(mongod-3.2.0) be-mean-pokemons> var poke = db.pokes.find({name:"Charmeleon"})
+Leonardos-MacBook-Pro(mongod-3.2.0) be-mean-pokemons> var poke = db.pokes.findOne({name:"Charmeleon"})
 ```
 
 
 ## Atualização do Pikachu (passo 6)
 ```
-Leonardos-MacBook-Pro(mongod-3.2.0) be-mean-pokemons> var poke = db.pokes.findOne({name:"Charmeleon"})
 Leonardos-MacBook-Pro(mongod-3.2.0) be-mean-pokemons> poke.description = "Tem mais fogo ainda no rabo"
 Tem mais fogo ainda no rabo
 Leonardos-MacBook-Pro(mongod-3.2.0) be-mean-pokemons> db.pokes.save(poke)
