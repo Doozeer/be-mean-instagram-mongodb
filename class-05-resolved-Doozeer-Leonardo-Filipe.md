@@ -133,6 +133,8 @@ Leonardos-MacBook-Pro(mongod-3.2.0) be-mean> db.pokemons.distinct('types');
 
 # As primeiras 3 pág. com .limit() e .skip() de pokemons (5 em 5).
 ```js
+Leonardos-MacBook-Pro(mongod-3.2.0) be-mean> pageSize = 5;
+5
 Leonardos-MacBook-Pro(mongod-3.2.0) be-mean> db.pokemons.find().limit(pageSize).skip(pageSize*0);
 {
   "_id": ObjectId("564b1dad25337263280d0479"),
